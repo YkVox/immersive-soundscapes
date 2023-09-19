@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:leaves",
+    "#minecraft:replaceable_by_trees",
+    "minecraft:cave_air",
+    "minecraft:air",
+    {
+      "id": "minecraft:mangrove_roots",
+      "required": false
+    },
+    {
+      "id": "minecraft:mangrove_propague", 
+      "required": false
+    },
+    "minecraft:snow",
+    "minecraft:torch",
+    "minecraft:lever",
+    "minecraft:sugar_cane"
+  ]
+}

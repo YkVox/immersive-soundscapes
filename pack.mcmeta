@@ -1,0 +1,15 @@
+{
+  "pack": {
+    "pack_format": 15,
+    "description": [
+      {
+        "text": "Immersive Soundscapes",
+        "color": "green"
+      },
+      {
+        "text": "\nv2.5.1 by TheWii, maintained to 1.20 by YkVox",
+        "color": "dark_gray"
+      }
+    ]
+  }
+}

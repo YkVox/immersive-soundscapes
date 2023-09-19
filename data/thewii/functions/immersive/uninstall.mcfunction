@@ -1,0 +1,41 @@
+schedule clear thewii:immersive/core/tick/5
+schedule clear thewii:immersive/core/tick/20
+advancement revoke @a only thewii:immersive/metal_swords
+advancement revoke @a only thewii:immersive/metal_tools
+advancement revoke @a only thewii:immersive/wooden_tools
+advancement revoke @a only thewii:immersive/wooden_swords
+advancement revoke @a only thewii:immersive/player_joined
+scoreboard objectives remove twis.data
+scoreboard objectives remove twis.temp
+scoreboard objectives remove twis.math
+scoreboard objectives remove twis.jump
+scoreboard objectives remove twis.loc
+scoreboard objectives remove twis.locsw
+scoreboard objectives remove twis.outside
+scoreboard objectives remove twis.preloc
+scoreboard objectives remove twis.trans
+scoreboard objectives remove twis.pretrans
+scoreboard objectives remove twis.backgr
+scoreboard objectives remove twis.backgrsw
+scoreboard objectives remove twis.loop
+scoreboard objectives remove twis.enter
+scoreboard objectives remove twis.joined
+scoreboard objectives remove twis.dim
+scoreboard objectives remove twis.dimsw
+scoreboard objectives remove twis.health
+scoreboard objectives remove twis.heart_loop
+scoreboard objectives remove ImmerSoundscapes
+scoreboard objectives remove twis.cfg_jump
+scoreboard objectives remove twis.cfg_heart
+scoreboard objectives remove twis.cfg_swords
+scoreboard objectives remove twis.cfg_tools
+scoreboard objectives remove twis.cst_id
+scoreboard objectives remove twis.cst_idle
+scoreboard objectives remove twis.cst_length
+scoreboard objectives remove twis.cst_playing
+scoreboard objectives remove twis.cfg_cst
+execute if data storage thewii:immersive/data installed run function thewii:vp_library/math/remove
+scoreboard players reset $immersive_soundscapes thewii.load
+data remove storage thewii:immersive/data installed
+data remove storage thewii:immersive/data version
+tellraw @a [{"text": "[Datapack]: ", "color": "yellow", "bold": true}, {"text": "Immersive Soundscapes was uninstalled. Disable the datapack to complete uninstallation or /reload to reinstall it.", "color": "white", "bold": false}]
